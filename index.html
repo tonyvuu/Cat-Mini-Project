@@ -16,24 +16,29 @@
 <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
 <div id="gridHead"> 
    <div class="headerImage">
-    <img src="Assets/PlaceholderImage.png" style="height: 200px;">
+     <img src="Assets/PlaceholderImage.png" style="height: 220px;">
    </div>
-
-   
 </div>
 
 <!-- This is the grid body. It contains everything else on the page. -->
-    <div id="gridBody"> 
-        
-    </div>
+
+<div class="gridBody"> 
+   <div class="adoptionListBox">
+     <h2>Cats Available For Adoption</h2>
+
+     <p>*This is where the API list of cats will go*</p>
+   </div>
+
+   <div class="factBox">
+<img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
+<div class="catFacts"></div>
+   </div>
+</div>
+
     
     <div id="footer">
         <button type="button" onclick="getCatFact()">Cat Facts</button>
     </div>
-    
-    <p>domestic short hair</p>
-    <p>long hair</p>
-    
-    <script src="jss.js"></script>
+
 </body>
 </html>
