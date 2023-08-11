@@ -5,4 +5,3 @@ function getCatFact(){
   .catch(error => console.error(error));
 }
 
-getCatFact()
