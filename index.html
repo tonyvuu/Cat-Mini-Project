@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt-A-Cat</title>
+    <link rel="stylesheet" src="style.css">
+    <script defer src="../Mini-Project/jss.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+
+
 <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
-<div class="gridHead"> 
+<div id="gridHead"> 
    <div class="headerImage">
      <img src="Assets/PlaceholderImage.png" style="height: 220px;">
    </div>
 </div>
 
 <!-- This is the grid body. It contains everything else on the page. -->
+
 <div class="gridBody"> 
    <div class="adoptionListBox">
      <h2>Cats Available For Adoption</h2>
@@ -28,7 +34,11 @@
 <div class="catFacts"></div>
    </div>
 </div>
+
     
+    <div id="footer">
+        <button type="button" onclick="getCatFact()">Cat Facts</button>
+    </div>
     
 </body>
 </html>
