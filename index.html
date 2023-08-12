@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt-A-Cat</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="../Mini-Project/jss.js"></script>
+    <script defer src="jss.js"></script>
 </head>
 
 <body>
@@ -31,8 +31,10 @@
 
    <div class="factBox">
     <!-- Cat facts button -->
-<img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
-<div class="catFacts"></div>
+    <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
+    <p id="fact"></p>
+    <button onclick="GenCatFacts()">Generate Cat Fact</button>
+    <div class="catFacts"></div>
    </div>
 </div>
     
