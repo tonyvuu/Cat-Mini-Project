@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 function getCatFact(){
     fetch('https://cat-fact.herokuapp.com/facts/random')
   .then(response => response.json())

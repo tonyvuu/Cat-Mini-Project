@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopt-A-Cat</title>
-    <link rel="stylesheet" src="style.css">
-    <script defer src="../Mini-Project/jss.js"></script>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt-A-Cat</title>
+  <link rel="stylesheet" src="style.css">
+  <script defer src="../Mini-Project/jss.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 
 
-<!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
-<div id="gridHead"> 
-   <div class="headerImage">
-     <img src="Assets/PlaceholderImage.png" style="height: 220px;">
-   </div>
-</div>
-
-<!-- This is the grid body. It contains everything else on the page. -->
-
-<div class="gridBody"> 
-   <div class="adoptionListBox">
-     <h2>Cats Available For Adoption</h2>
-
-     <p>*This is where the API list of cats will go*</p>
-   </div>
-
-   <div class="factBox">
-<img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
-<div class="catFacts"></div>
-   </div>
-</div>
-
-    
-    <div id="footer">
-        <button type="button" onclick="getCatFact()">Cat Facts</button>
+  <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
+  <div id="gridHead">
+    <div class="headerImage">
+      <img src="Assets/PlaceholderImage.png" style="height: 220px;">
     </div>
+  </div>
+
+  <!-- This is the grid body. It contains everything else on the page. -->
+
+  <div id="gridBody">
+    <div class="catInfo">
+      <div id="breedListBox">
+        <h2>List of Cat Breeds</h2>
+
+        <p>*This is where the API list of cats will go*</p>
+      </div>
+
+      <div id="breedInfoBox">
+        <div class="catBreedImg">
+          <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
+        </div>
+        <div class="catBreedInfo">
+          Information about the cat breeds go here<br>
+          - Breed<br>
+          - Lifespan<br>
+          - Weight:       Length:<br>
+          - Coat<br>
+          - Friendliness<br>
+          - Health Issues<br>
+          - Social Needs<br>
+          - Grooming Needs<br>
+          - Shed Level<br>
+          - Vocalization Tendency<br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer">
+    <button type="button" onclick="getCatFact()">Cat Facts</button>
+  </div>
 
 </body>
+
 </html>
