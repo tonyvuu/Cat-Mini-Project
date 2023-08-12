@@ -1,7 +1,8 @@
-function getCatFact(){
-    fetch('https://cat-fact.herokuapp.com/facts/random')
-  .then(response => response.json())
-  .then(data => console.log(data.text))
-  .catch(error => console.error(error));
-}
 
+const GenCatFacts = ()=> {
+    fetch("https://catfact.ninja/fact")
+    .then(response => response.json())
+    .then(result=> result.fact)
+    .then(fact => document.getElementById("fact").innerText = fact
+    );
+}
