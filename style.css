@@ -1,4 +1,4 @@
- body{
+body{
       cursor: url('Assets/PlaceholderCursor.png'),auto;
   }
 
@@ -9,19 +9,17 @@ grid-template-columns: 50% 50%;
 align-items: center;
 justify-items: center;
 padding: 10px;  
-
 }
 
-.gridBody{
+#gridHead{
   display: grid; 
-grid-template-rows: 500px 500px;
-grid-template-columns: 25% 25% 25% 25%;
-align-items: center;
-justify-items: center;
-padding: 10px;  
-background-color: rgb(255, 178, 231);
-
-
+  grid-template-rows: 250px;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;  
+  background-color: rgb(227, 227, 227);
+  
 }
 
 .headerImage{
@@ -36,28 +34,51 @@ background-color: rgb(255, 178, 231);
   justify-content: center;
 }
 
-.adoptionListBox{
+#gridBody{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;   
+  background-color: rgb(255, 178, 231);
+} 
+
+.catInfo{
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+}
+
+#breedListBox{
   display: flex;
   height: 500px;
   width: 750px;
   background-color: white;
-  grid-column: 1/3;
-  grid-row: 1/2;
+  grid-column: 1/2;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  align-self: center;
+
 }
 
-.factBox{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  height: 250px;
+#breedInfoBox{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr ;
+  /* align-items: center;
+  justify-content: center; */
+  height: 100%;
   width: 500px;
   background-color: rgb(255, 189, 221);
-  grid-row: 3/3;
-  grid-column: 1/3;
+  grid-column: 3/4;
+}
+
+.catBreedImg{
+  display: flex;
+  justify-content: center;
+}
+
+.catBreedInfo{
+  display: flex;
+  justify-content: center;
 }
 
 .catPawImage{

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- MAIN NOTES -PLEASE DO NOT CHANGE CLASSES TO ID'S WITHOUT SAYING ANYTHING!!-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +12,43 @@
 
 <body>
 
+  <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
+  <div id="gridHead">
+    <div class="headerImage">
+      <img src="Assets/PlaceholderImage.png" style="height: 220px;">
+    </div>
+  </div>
 
+  <!-- This is the grid body. It contains everything else on the page. -->
 
-<!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
-<div class="gridHead"> 
-   <div class="headerImage">
-     <img src="Assets/PlaceholderImage.png" style="height: 250px; width: 350px;">
-   </div>
-</div>
+  <div id="gridBody">
+    <div class="catInfo">
+      <div id="breedListBox">
+        <h2>List of Cat Breeds</h2>
 
-<!-- This is the grid body. It contains everything else on the page. -->
+        <p>*This is where the API list of cats will go*</p>
+      </div>
 
-<div class="gridBody"> 
-   <div class="adoptionListBox">
-     <h2>Cats Available For Adoption</h2>
-
-     <p>*This is where the API list of cats will go*</p>
-   </div>
+      <div id="breedInfoBox">
+        <div class="catBreedImg">
+          <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
+        </div>
+        <div class="catBreedInfo">
+          Information about the cat breeds go here<br>
+          - Breed<br>
+          - Lifespan<br>
+          - Weight:       Length:<br>
+          - Coat<br>
+          - Friendliness<br>
+          - Health Issues<br>
+          - Social Needs<br>
+          - Grooming Needs<br>
+          - Shed Level<br>
+          - Vocalization Tendency<br>
+        </div>
+      </div>
+    </div>
+  </div>
 
    <div class="factBox">
     <!-- Cat facts button -->
@@ -37,6 +58,7 @@
     <div class="catFacts"></div>
    </div>
 </div>
-    
+ 
 </body>
+
 </html>

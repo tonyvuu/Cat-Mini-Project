@@ -1,4 +1,3 @@
-
 const GenCatFacts = ()=> {
     fetch("https://catfact.ninja/fact")
     .then(response => response.json())
