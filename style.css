@@ -1,15 +1,17 @@
+html{
+  background-color: white;
+}
+
 body{
       cursor: url('Assets/PlaceholderCursor.png'),auto;
+      padding: 25px;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
   }
 
-.gridHead{
-display: grid; 
-grid-template-rows: 300px;
-grid-template-columns: 50% 50%;
-align-items: center;
-justify-items: center;
-padding: 10px;  
-}
+
 
 #gridHead{
   display: grid; 
@@ -18,7 +20,7 @@ padding: 10px;
   align-items: center;
   justify-items: center;
   padding: 10px;  
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(255, 255, 255);
   
 }
 
@@ -26,51 +28,54 @@ padding: 10px;
   display: flex;
   grid-column: 1/4;
   grid-row: 1/1;
-  border: solid rgb(127, 127, 127) 5px;
-  height: 275px;
-  width: 375px;
+  /* border: solid rgb(127, 127, 127) 5px; */
+  height: 200px;
+  width: 1250px;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
 
-#gridBody{
-  display: flex;
-  align-items: center;
-  justify-items: center;
+.gridBody{
+  display: grid;
+  grid-template-rows: 500px 150px;
+  grid-template-columns: 50% 50%;
   padding: 10px;   
-  background-color: rgb(255, 178, 231);
+  background-color: rgb(255, 44, 153);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  width: 1250px;
+  margin-top: 25px;
 } 
 
-.catInfo{
-  display: grid;
-  width: 90%;
-  grid-template-columns: 1fr 1fr;
-}
-
-#breedListBox{
+.breedListBox{
   display: flex;
   height: 500px;
   width: 650px;
   background-color: white;
-  grid-column: 1/2;
   flex-direction: column;
   align-items: center;
   align-content: center;
   align-self: center;
-  margin
+  border-radius: 5px;
+  grid-row: 1/2;
+  grid-column: 1/1;
 }
 
-#breedInfoBox{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr ;
-  /* align-items: center;
-  justify-content: center; */
+.breedInfoBox{
+  display: flex;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr ;  */
+  align-items: center;
+  justify-content: center; 
   height: 100%;
   width: 500px;
   background-color: rgb(255, 189, 221);
   grid-column: 3/4;
+  grid-row: 1/1;
 }
 
 .catBreedImg{
@@ -84,5 +89,77 @@ padding: 10px;
 }
 
 .catPawImage{
-  justify-self: left;
+  margin-right:50px;
 }
+
+.gridFooter{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  align-self: center;
+  padding: 10px;   
+  background-color: rgb(255, 44, 153);
+  border-radius: 5px;
+} 
+
+.factBox{
+  /* background-color: aqua; */
+  height: 250px;
+  width: 950px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  padding: 25px;
+  border-radius: 5px;
+  
+}
+
+#gridBody {
+  display: grid;
+  grid-template-rows: 850px; /* Changed to 1fr for better alignment */
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+  background-color: rgb(255, 44, 153);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 25px;
+}
+
+#breedListBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  grid-row: 1; /* Changed to 1 (implicit 1/2) */
+  grid-column: 1; /* Changed to 1 (implicit 1/2) */
+  height: 750px;
+  width: 600px;
+}
+
+#breedInfoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 189, 221);
+  border-radius: 5px;
+  grid-row: 1; /* Changed to 1 (implicit 1/2) */
+  grid-column: 2; /* Changed to 2 (implicit 1/2) */
+  height: 450px;
+  width: 600px;
+}
+
+/* Remove these lines to better align the content within breedInfoBox */
+/* .catBreedImg {
+  display: flex;
+  justify-content: center;
+}
+
+.catBreedInfo {
+  display: flex;
+  justify-content: center;
+} */

@@ -15,14 +15,13 @@
   <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
   <div id="gridHead">
     <div class="headerImage">
-      <img src="Assets/PlaceholderImage.png" style="height: 220px;">
+      <img src="Assets/MeowMatchUncropped.png" style="height: 220px;">
     </div>
   </div>
 
   <!-- This is the grid body. It contains everything else on the page. -->
 
   <div id="gridBody">
-    <div class="catInfo">
       <div id="breedListBox">
         <h2>List of Cat Breeds</h2>
       </div>
@@ -45,17 +44,19 @@
           - Vocalization Tendency<br>
         </div>
       </div>
-    </div>
   </div>
 
+
+   <div class="gridFooter">
    <div class="factBox">
     <!-- Cat facts button -->
-    <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
-    <p id="fact"></p>
-    <button onclick="GenCatFacts()">Generate Cat Fact</button>
+    <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage" onclick="GenCatFacts()">
+    <p id="fact" style="color: rgb(255, 255, 61); font-size: x-large; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;"></p>
+    <!-- <button onclick="GenCatFacts()">Generate Cat Fact</button> -->
     <div class="catFacts"></div>
    </div>
 </div>
+
  
 </body>
 
