@@ -18,9 +18,10 @@ body {
     align-content: center;
     justify-content: center;
     justify-items: center;
-
-}
-
+    
+  }
+  
+/* This section is for the HEADER */
 #gridHead {
   display: flex;
   align-items: center;
@@ -38,6 +39,11 @@ body {
   justify-content: center;
 }
 
+.NavBar{
+  display: flex;
+}
+
+/* This section is for the BODY */
 #gridBody {
   display: grid;
   grid-template-rows:250px, 850px; /* Changed to 1fr for better alignment */
@@ -110,13 +116,7 @@ body {
   justify-content: center;
 }
 
-.catPawImage {
-  margin-right: 50px;
-  float: left;
-  width: 80px;
-  height: auto;
-}
-
+/* This section is for the FOOTER */
 .gridFooter {
   display: grid;
   align-items: center;
@@ -139,6 +139,13 @@ body {
   padding: 25px;
   border-radius: 5px; 
 } */
+
+.catPawImage {
+  margin-right: 50px;
+  float: left;
+  width: 80px;
+  height: auto;
+}
 
 #factBox {
   position: fixed;
@@ -202,9 +209,6 @@ button{
   width: 320px;
 }
 
-.NavBar{
-  display: flex;
-}
 
 footer {
   height: 50px;
