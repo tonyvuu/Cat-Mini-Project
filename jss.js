@@ -39,16 +39,23 @@ function GenCatBreed() {
                         infoBox.removeChild(infoBox.firstChild);
                     }
 
+
                     //Will add an image of the seleted breed and gives the image the class 'breedImg'.
+                    
                     let id = catBreed[i].id;
                     let imageTag = document.createElement('img');
                     imageTag.classList.add('breedImg')
                     imageTag.src = `./Assets/Cat-Pictures/${id}.jpeg`;
                     infoBox.appendChild(imageTag);
+                    
 
                     //Creates a list for the below list items to be stored.
                     let breedInfo = document.createElement('ul');
+
                     infoBox.appendChild(imageImg);
+
+                   
+
                     infoBox.appendChild(breedInfo);
 
 
