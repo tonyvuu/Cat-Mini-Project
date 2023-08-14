@@ -19,8 +19,8 @@ function GenCatBreed() {
             console.log(catBreed)
 
             //For loop to cycle throught the data from our fetch request. For our purposes we are only looping therough the first 20 indeces for the time being.
-            for (let i = 0; i < 20; i++) {
-                console.log(catBreed[i].name)
+            for (let i = 0; i < catBreed.length; i++) {
+                // console.log(catBreed[i].name)
                 
                 //Creates a button after each loop and sets the inner text of the button to the breed at each index position.
                 let breed = document.createElement('button');
@@ -70,23 +70,50 @@ function GenCatBreed() {
 
                     let lifespan = catBreed[i].life_span;
                     let lifeTag = document.createElement('li');
-                    lifeTag.innerText = `Lifespan: ${lifespan}`;
+                    lifeTag.innerText = `Lifespan: ${lifespan} years`;
                     breedInfo.appendChild(lifeTag);
 
-                    let size = catBreed[i].weight.metric;
+                    let size = catBreed[i].weight.imperial;
                     let sizeTag = document.createElement('li');
                     sizeTag.innerText = `Weight: ${size}lbs`;
                     breedInfo.appendChild(sizeTag);
 
-                    let friendliness = catBreed[i].friendliness;
                     let friendTag = document.createElement('li');
-                    friendTag.innerText = `Friendliness: ${friendliness}`;
+                    friendTag.innerText = `Friendliness: Children: ${catBreed[i].child_friendly}; Dogs: ${catBreed[i].dog_friendly}; Strangers: ${catBreed[i].stranger_friendly}`; 
                     breedInfo.appendChild(friendTag)
 
                     let socialness = catBreed[i].social_needs;
                     let socialTag = document.createElement('li');
                     socialTag.innerText = `Socialness: ${socialness}`;
                     breedInfo.appendChild(socialTag);
+
+                    let vocalisation = catBreed[i].vocalisation;
+                    let vocalTag = document.createElement('li');
+                    vocalTag.innerText = `Vocalisation: ${vocalisation}`;
+                    breedInfo.appendChild(vocalTag);
+
+                    let shedding = catBreed[i].shedding_level;
+                    let shedTag = document.createElement('li');
+                    shedTag.innerText = `Shedding: ${shedding}`;
+                    breedInfo.appendChild(shedTag);
+                    
+                    let health = catBreed[i].health_issues;
+                    let healthTag = document.createElement('li');
+                    healthTag.innerText = `Health: ${health}`;
+                    breedInfo.appendChild(healthTag);
+                    
+                    //If statement converts the value of Hypoallergenic from binary to yes or no.
+                    if (catBreed[i].hypoallergenic < 1){
+                        let allergy = 'No';
+                        let allergyTag = document.createElement('li');
+                        allergyTag.innerText = `Hypoallergenic: ${allergy}`;
+                        breedInfo.appendChild(allergyTag);
+                        } else {
+                        let allergy = 'Yes';
+                        let allergyTag = document.createElement('li');
+                        allergyTag.innerText = `Hypoallergenic: ${allergy}`;
+                        breedInfo.appendChild(allergyTag);
+                        }
                 })
             }
         })
