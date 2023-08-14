@@ -1,0 +1,23 @@
+.Header{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.youtube{ 
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.Header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
