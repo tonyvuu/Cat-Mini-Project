@@ -117,8 +117,9 @@ body {
   border-radius: 5px;
   grid-row: 2; /* Changed to 1 (implicit 1/2) */
   grid-column: 2; /* Changed to 2 (implicit 1/2) */
-  height: 450px;
+  height: 600px;
   width: 600px;
+  
 }
 
 button{
@@ -152,4 +153,9 @@ button{
   justify-self: center;
   justify-content: center;
   align-self: center;
+}
+
+.breedImg{
+  height: 200px;
+  width: 320px;
 }

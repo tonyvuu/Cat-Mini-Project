@@ -40,19 +40,15 @@ function GenCatBreed() {
                     }
 
                     //Adds a header to the infoBox with the name of the selected breed.
-                    let name = catBreed[i].name;
-                    let nameTag = document.createElement('h2');
-                    nameTag.innerText = name;
-                    infoBox.appendChild(nameTag);
-
-                    //Will add an image of the seleted breed.
-                    let breedImg = document.createElement('img');
-                    breedImg.innerHTML = src = `${catBreed[i]}`;
-                    infoBox.appendChild(breedImg)
+                    let id = catBreed[i].id;
+                    let imageTag = document.createElement('img');
+                    imageTag.classList.add('breedImg')
+                    imageTag.src = `./Assets/Cat-Pictures/${id}.jpeg`;
+                    infoBox.appendChild(imageTag);
 
                     //Creates a list for the below list items to be stored.
                     let breedInfo = document.createElement('ul');
-                    infoBox.appendChild(breedImg);
+                    infoBox.appendChild(imageTag);
                     infoBox.appendChild(breedInfo);
 
 
