@@ -1,3 +1,7 @@
+// Here I, US, am looking to add the custom cursor 
+
+const cursor = document.querySelector("cursor");
+
 const GenCatFacts = () => {
     fetch("https://catfact.ninja/fact")
         .then(response => response.json())
