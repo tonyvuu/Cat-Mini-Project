@@ -1,77 +1,4 @@
-<nav class="navbar is-transparent">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://static.wixstatic.com/media/625028_b3a4e365af474268a84845381d8a6716~mv2.png" alt="Cat waiting for you" width="36" height="28">
-    </a>
-    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
-      <span></span>
-    </div>
-  </div>
 
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="https://bulma.io/">
-        Home
-      </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
-          What you really want
-        </a>
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
-            Overview
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
-            Modifiers
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-            Columns<div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://atlantahumane.org/adopt/cats/">
-          Discover YOUR Feline
-        </a>
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://atlantahumane.org/adopt/cats/">
-            Atlanta Humane Society
-          </a>
-          <a class="navbar-item" href="https://furkids.org/cat-adoptions">
-            Fur Kids
-          </a>
-          <a class="navbar-item" href="https://www.pawsatlanta.org/adopt/cats">
-            Paws Atlanta
-          </a>
-          <a class="navbar-item" href="https://www.petfinder.com/search/cats-for-adoption/us/ga/atlanta/">
-            PetFinder
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field is-grouped">
-          <p class="control">
-            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
-              <span class="icon">
-                <i class="fab fa-twitter"></i>
-              </span>
-              <span>
-                Tweet
-              </span>
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip">
-              <span class="icon">
-                <i class="fas fa-download"></i>
-              </span>
-              <span>Download</span>
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
 html {
   background-color: rgb(101, 193, 140);
 }
@@ -79,8 +6,7 @@ html {
 body {
   /* cursor: url('Assets/PlaceholderCursor.png'),auto; */
 
-  margin: 0;
-  height: 100vh;
+  /* margin: 0;
 /* Adds a custom cursor to the website. */
   cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
   .cursor {
@@ -88,13 +14,16 @@ body {
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     padding: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    
   }
-}
-
+  
+/* This section is for the HEADER */
 #gridHead {
-  display: grid;
-  grid-template-rows: 250px;
-  grid-template-columns: 50% 50%;
+  display: flex;
   align-items: center;
   justify-items: center;
   padding: 10px;  
@@ -102,60 +31,25 @@ body {
 
 .headerImage {
   display: flex;
-  grid-column: 1/4;
-  grid-row: 1/1;
   /* border: solid rgb(127, 127, 127) 5px; */
-  height: 200px;
-  width: 1250px;
+  height: 10%;
+  width: 100%;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
 
-.catBreedImg {
+.NavBar{
   display: flex;
-  justify-content: center;
 }
 
-.catBreedInfo {
-  display: flex;
-  justify-content: center;
-}
-
-.catPawImage {
-  margin-right: 50px;
-}
-
-.gridFooter {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  align-self: center; 
-  padding: 10px;   
-  background-color: rgb(193, 244, 197);
-  border-radius: 5px;
-}
-
-.factBox {
-  /* background-color: aqua; */
-  height: 250px;
-  width: 950px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  padding: 25px;
-  border-radius: 5px;
-
-}
-
+/* This section is for the BODY */
 #gridBody {
   display: grid;
   grid-template-rows:250px, 850px; /* Changed to 1fr for better alignment */
   grid-template-columns: 50% 50%;
   padding: 50px;
-  background-color: rgb(193, 244, 197);
+  background-color: rgb(194, 245, 198);
   border-radius: 5px;
   justify-content: center;
   align-items: center;
@@ -163,6 +57,28 @@ body {
   margin-top: 25px;
   margin-bottom: 5px;
 }
+
+#breedListBoxTop{
+  display: flex;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: white;
+  border-radius: 5px;
+  grid-row: 1; /* Changed to 1 (implicit 1/2) */
+  grid-column: 1; /* Changed to 1 (implicit 1/2) */
+  height: 100px;
+  width: 600px;
+  padding: 10px;
+}
+
+.listTitle{
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+}
+
 
 #breedListBox {
   display: flex;
@@ -189,8 +105,70 @@ body {
   grid-column: 2; /* Changed to 2 (implicit 1/2) */
   height: 600px;
   width: 600px;
-  
 }
+
+.breedImg{
+  height: 200px;
+  width: 320px;
+}
+.catBreedInfo {
+  display: flex;
+  justify-content: center;
+}
+
+/* This section is for the FOOTER */
+.gridFooter {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  align-self: center; 
+  padding: 10px;   
+  background-color: rgb(193, 244, 197);
+  border-radius: 5px;
+}
+
+/* #factBox {
+  background-color: aqua;
+  height: 250px;
+  width: 950px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  padding: 25px;
+  border-radius: 5px; 
+} */
+
+.catPawImage {
+  margin-right: 50px;
+  float: left;
+  width: 80px;
+  height: auto;
+}
+
+#factBox {
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Center the box horizontally */
+  transform: translateX(-50%); /* Center the box horizontally */
+  padding: 10px;
+  background-color: rgb(194, 245, 198); /* Add a semi-transparent background */
+  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Add a separator line */
+  width: 100%;
+  text-align: center;
+  display: grid;  
+  grid-template-columns: 10%, 80%;
+}
+
+
+.catPawImage {
+  margin-right: 50px;
+  width: 6%;
+  height: auto;
+  grid-column: 1;
+}
+
 
 button{
   width: 300px;
@@ -202,6 +180,7 @@ button{
   border-radius: 5px;
   font-size: 20px;
   padding: 10px;
+
 }
 
 #breedListBoxTop{
@@ -228,4 +207,22 @@ button{
 .breedImg{
   height: 200px;
   width: 320px;
+}
+
+
+footer {
+  height: 50px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between; 
+
 }
