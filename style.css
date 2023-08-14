@@ -159,3 +159,24 @@ button{
   height: 200px;
   width: 320px;
 }
+
+.NavBar{
+  display: flex;
+}
+
+footer {
+  height: 50px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between; 
+}
