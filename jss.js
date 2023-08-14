@@ -9,6 +9,13 @@ const GenCatFacts = () => {
         .then(fact => document.getElementById("fact").innerText = fact
         );
 }
+<script src="file_name.js"></script>
+
+//cat meow wav to work upon click
+function sound() {
+    var snd = new Audio('Short-meow-sound-effect.mp3')
+    snd.play()//plays the sound
+}
 
 function GenCatBreed() {
     fetch("https://api.thecatapi.com/v1/breeds")
