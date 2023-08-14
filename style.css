@@ -6,20 +6,18 @@ html {
 body {
   /* cursor: url('Assets/PlaceholderCursor.png'),auto; */
 
-  /* margin: 0;
-/* Adds a custom cursor to the website. */
-  /* cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
+  /* Adds a custom cursor to the website. */
+  margin: 0;
+  height: 100vh;
+  cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
+  
   .cursor {
     position: absolute;
     transition-duration: 200ms;
-    transition-timing-function: ease-out; */
+    transition-timing-function: ease-out;
     padding: 25px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    
   }
+}
   
 /* This section is for the HEADER */
 #gridHead {
