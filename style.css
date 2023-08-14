@@ -8,11 +8,11 @@ body {
 
   /* margin: 0;
 /* Adds a custom cursor to the website. */
-  cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
+  /* cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
   .cursor {
     position: absolute;
     transition-duration: 200ms;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-out; */
     padding: 25px;
     align-items: center;
     align-content: center;
