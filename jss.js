@@ -1,8 +1,10 @@
 // Here I, US, am looking to add the custom cursor 
 
+// const soundEffect = document.getElementById('soundEffect');
 const cursor = document.querySelector("cursor");
 
 const GenCatFacts = () => {
+    soundEffect.play();
     fetch("https://catfact.ninja/fact")
         .then(response => response.json())
         .then(result => result.fact)
