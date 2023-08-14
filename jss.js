@@ -69,7 +69,7 @@ function GenCatBreed() {
                     lifeTag.innerText = `Lifespan: ${lifespan} years`;
                     breedInfo.appendChild(lifeTag);
 
-                    let size = catBreed[i].weight.metric;
+                    let size = catBreed[i].weight.imperial;
                     let sizeTag = document.createElement('li');
                     sizeTag.innerText = `Weight: ${size}lbs`;
                     breedInfo.appendChild(sizeTag);
@@ -83,10 +83,33 @@ function GenCatBreed() {
                     socialTag.innerText = `Socialness: ${socialness}`;
                     breedInfo.appendChild(socialTag);
 
-                    let allergy = catBreed[i].hypoallergenic;
-                    let allergyTag = document.createElement('li');
-                    allergyTag.innerText = `Hypoallergenic: ${allergy}`;
-                    breedInfo.appendChild(allergyTag);
+                    let vocalisation = catBreed[i].vocalisation;
+                    let vocalTag = document.createElement('li');
+                    vocalTag.innerText = `Vocalisation: ${vocalisation}`;
+                    breedInfo.appendChild(vocalTag);
+
+                    let shedding = catBreed[i].shedding_level;
+                    let shedTag = document.createElement('li');
+                    shedTag.innerText = `Shedding: ${shedding}`;
+                    breedInfo.appendChild(shedTag);
+                    
+                    let health = catBreed[i].health_issues;
+                    let healthTag = document.createElement('li');
+                    healthTag.innerText = `Health: ${health}`;
+                    breedInfo.appendChild(healthTag);
+                    
+                    //If statement converts the value of Hypoallergenic from binary to yes or no.
+                    if (catBreed[i].hypoallergenic < 1){
+                        let allergy = 'No';
+                        let allergyTag = document.createElement('li');
+                        allergyTag.innerText = `Hypoallergenic: ${allergy}`;
+                        breedInfo.appendChild(allergyTag);
+                        } else {
+                        let allergy = 'Yes';
+                        let allergyTag = document.createElement('li');
+                        allergyTag.innerText = `Hypoallergenic: ${allergy}`;
+                        breedInfo.appendChild(allergyTag);
+                        }
                 })
             }
         })
