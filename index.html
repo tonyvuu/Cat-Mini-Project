@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <!-- MAIN NOTES -PLEASE DO NOT CHANGE CLASSES TO ID'S WITHOUT SAYING ANYTHING!!-->
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt-A-Cat</title>
+    
+    <!-- Here I, US, am adding the bootstrap link for css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
     <script defer src="jss.js"></script>
-</head>
-
-<body>
-
+    <!-- Here I, US, am adding the bootstrap link for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    
+  
   <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
   <div id="gridHead">
     <div class="headerImage">
@@ -22,6 +28,13 @@
   <!-- This is the grid body. It contains everything else on the page. -->
 
   <div id="gridBody">
+   
+    <!-- Here I, US, am adding a scrollbar as we are looking to activate all 67 types of cats on a scrollbar so that site real estate is maximized. -->
+    
+    <!-- const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+  firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+    // do something...
+  }) -->
       <div id="breedListBox">
         <h2>List of Cat Breeds</h2>
       </div>
@@ -29,7 +42,19 @@
       <div id="breedInfoBox">
         <div class="catBreedImg">
           <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
-        </div>
+        
+          <!-- Here I, US, am trying to add a car that will display a cat image pulled from another html. -->
+           <!-- </div> -->
+        <!-- <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div> -->
+        </div> 
         <!-- <div class="catBreedInfo">
           Information about the cat breeds go here<br>
           - Breed<br>
@@ -51,6 +76,7 @@
    <div class="factBox">
     <!-- Cat facts button -->
     <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage" onclick="GenCatFacts()">
+    <!-- Here I, US, am adding an addEventListener that adds a purr sound for the cat facts -->
     <p id="fact" style="color: rgb(255, 255, 61); font-size: x-large; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;"></p>
     <!-- <button onclick="GenCatFacts()">Generate Cat Fact</button> -->
     <div class="catFacts"></div>
