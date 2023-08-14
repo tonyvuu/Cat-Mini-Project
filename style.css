@@ -139,6 +139,7 @@ body{
   grid-column: 1; /* Changed to 1 (implicit 1/2) */
   height: 750px;
   width: 600px;
+  overflow-y: auto;
 }
 
 #breedInfoBox {
