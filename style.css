@@ -14,9 +14,9 @@ body {
     position: absolute;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
+    padding: 25px;
   }
 
-  padding: 25px;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -32,108 +32,65 @@ body {
   align-items: center;
   justify-items: center;
   padding: 10px;
-  background-color: rgb(255, 255, 255);
 
 }
 
-.headerImage {
-  display: flex;
-  grid-column: 1/4;
-  grid-row: 1/1;
-  /* border: solid rgb(127, 127, 127) 5px; */
-  height: 200px;
-  width: 1250px;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
+  .headerImage {
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    /* border: solid rgb(127, 127, 127) 5px; */
+    height: 200px;
+    width: 1250px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
 
-.gridBody {
-  display: grid;
-  grid-template-rows: 500px 150px;
-  grid-template-columns: 50% 50%;
-  padding: 10px;   
-  background-color: rgb(193, 244, 197);
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  width: 1250px;
-  margin-top: 25px;
-}
+  .catBreedImg { 
+    display: flex;
+    justify-content: center;
+  }
 
-.breedListBox {
-  display: flex;
-  height: 500px;
-  width: 650px;
-  background-color: white;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  border-radius: 5px;
-  grid-row: 1/2;
-  grid-column: 1/1;
-}
+  .catBreedInfo {
+    display: flex;
+    justify-content: center;
+  }
 
-.breedInfoBox {
-  display: flex;
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr ;  */
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 500px;
-  background-color: rgb(255, 189, 221);
-  grid-column: 3/4;
-  grid-row: 1/1;
-}
+  .catPawImage {
+    margin-right: 50px;
+  }
 
-.catBreedImg {
-  display: flex;
-  justify-content: center;
-}
+  .gridFooter {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    align-self: center;
+    padding: 10px;
+    background-color: rgb(193, 244, 197);
+    border-radius: 5px;
+  }
 
-.catBreedInfo {
-  display: flex;
-  justify-content: center;
-}
+  .factBox {
+    /* background-color: aqua; */
+    height: 250px;
+    width: 950px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    padding: 25px;
+    border-radius: 5px;
 
-.catPawImage {
-  margin-right: 50px;
-}
-
-.gridFooter {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  align-self: center; 
-  padding: 10px;   
-  background-color: rgb(193, 244, 197);
-  border-radius: 5px;
-}
-
-.factBox {
-  /* background-color: aqua; */
-  height: 250px;
-  width: 950px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  padding: 25px;
-  border-radius: 5px;
-
-}
+  }
 
 #gridBody {
   display: grid;
-  grid-template-rows: 850px;
+  grid-template-rows: 250px, 850px;
   /* Changed to 1fr for better alignment */
   grid-template-columns: 50% 50%;
-  padding: 10px;
+  padding: 50px;
   background-color: rgb(193, 244, 197);
   border-radius: 5px;
   justify-content: center;
@@ -149,38 +106,65 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 5px;
-  grid-row: 1;
+  grid-row: 2;
   /* Changed to 1 (implicit 1/2) */
   grid-column: 1;
   /* Changed to 1 (implicit 1/2) */
   height: 750px;
   width: 600px;
   overflow-y: auto;
+  padding: 10px;
 }
 
 #breedInfoBox {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 189, 221);
   border-radius: 5px;
-  grid-row: 1;
+  grid-row: 2;
   /* Changed to 1 (implicit 1/2) */
   grid-column: 2;
   /* Changed to 2 (implicit 1/2) */
-  height: 450px;
+  height: 600px;
   width: 600px;
+  
+}
+button{
+  width: 300px;
+  height: 150px;
+  border: 2px solid rgb(204, 0, 82);
+  background-color: rgb(255, 0, 102);
+  color: yellow;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+button{
+  width: 300px;
+  height: 150px;
+  border: 2px solid rgb(204, 0, 82);
+  background-color: rgb(255, 0, 102);
+  color: yellow;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
 }
 
 
 
-/* Remove these lines to better align the content within breedInfoBox */
-/* .catBreedImg {
-  display: flex;
+
+.listTitle{
+  justify-self: center;
   justify-content: center;
+  align-self: center;
 }
 
-.catBreedInfo {
-  display: flex;
-  justify-content: center;
-} */
+.breedImg{
+  height: 200px;
+  width: 320px;
+}
