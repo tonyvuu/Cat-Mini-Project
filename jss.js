@@ -39,20 +39,16 @@ function GenCatBreed() {
                         infoBox.removeChild(infoBox.firstChild);
                     }
 
-                    //Adds a header to the infoBox with the name of the selected breed.
-                    let name = catBreed[i].name;
-                    let nameTag = document.createElement('h2');
-                    nameTag.innerText = name;
-                    infoBox.appendChild(nameTag);
-
-                    //Will add an image of the seleted breed.
-                    let breedImg = document.createElement('img');
-                    breedImg.innerHTML = src = `${catBreed[i]}`;
-                    infoBox.appendChild(breedImg)
+                    //Will add an image of the seleted breed and gives the image the class 'breedImg'.
+                    let id = catBreed[i].id;
+                    let imageTag = document.createElement('img');
+                    imageTag.classList.add('breedImg')
+                    imageTag.src = `./Assets/Cat-Pictures/${id}.jpeg`;
+                    infoBox.appendChild(imageTag);
 
                     //Creates a list for the below list items to be stored.
                     let breedInfo = document.createElement('ul');
-                    infoBox.appendChild(breedImg);
+                    infoBox.appendChild(imageImg);
                     infoBox.appendChild(breedInfo);
 
 
@@ -70,17 +66,16 @@ function GenCatBreed() {
 
                     let lifespan = catBreed[i].life_span;
                     let lifeTag = document.createElement('li');
-                    lifeTag.innerText = `Lifespan: ${lifespan}`;
+                    lifeTag.innerText = `Lifespan: ${lifespan} years`;
                     breedInfo.appendChild(lifeTag);
 
-                    let size = catBreed[i].weight.metric;
+                    let size = catBreed[i].weight.imperial;
                     let sizeTag = document.createElement('li');
                     sizeTag.innerText = `Weight: ${size}lbs`;
                     breedInfo.appendChild(sizeTag);
 
-                    let friendliness = catBreed[i].friendliness;
                     let friendTag = document.createElement('li');
-                    friendTag.innerText = `Friendliness: ${friendliness}`;
+                    friendTag.innerText = `Friendliness: Children: ${catBreed[i].child_friendly}; Dogs: ${catBreed[i].dog_friendly}; Strangers: ${catBreed[i].stranger_friendly}`; 
                     breedInfo.appendChild(friendTag)
 
                     let socialness = catBreed[i].social_needs;
@@ -88,16 +83,36 @@ function GenCatBreed() {
                     socialTag.innerText = `Socialness: ${socialness}`;
                     breedInfo.appendChild(socialTag);
 
-                            
+                    let vocalisation = catBreed[i].vocalisation;
+                    let vocalTag = document.createElement('li');
+                    vocalTag.innerText = `Vocalisation: ${vocalisation}`;
+                    breedInfo.appendChild(vocalTag);
+
+                    let shedding = catBreed[i].shedding_level;
+                    let shedTag = document.createElement('li');
+                    shedTag.innerText = `Shedding: ${shedding}`;
+                    breedInfo.appendChild(shedTag);
                     
-
-
-
-
+                    let health = catBreed[i].health_issues;
+                    let healthTag = document.createElement('li');
+                    healthTag.innerText = `Health: ${health}`;
+                    breedInfo.appendChild(healthTag);
+                    
+                    //If statement converts the value of Hypoallergenic from binary to yes or no.
+                    if (catBreed[i].hypoallergenic < 1){
+                        let allergy = 'No';
+                        let allergyTag = document.createElement('li');
+                        allergyTag.innerText = `Hypoallergenic: ${allergy}`;
+                        breedInfo.appendChild(allergyTag);
+                        } else {
+                        let allergy = 'Yes';
+                        let allergyTag = document.createElement('li');
+                        allergyTag.innerText = `Hypoallergenic: ${allergy}`;
+                        breedInfo.appendChild(allergyTag);
+                        }
                 })
             }
         })
-    
 }
 
 
