@@ -1,4 +1,77 @@
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://static.wixstatic.com/media/625028_b3a4e365af474268a84845381d8a6716~mv2.png" alt="Cat waiting for you" width="36" height="28">
+    </a>
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+    </div>
+  </div>
 
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="https://bulma.io/">
+        Home
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+          What you really want
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+            Overview
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+            Modifiers
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+            Columns<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="https://atlantahumane.org/adopt/cats/">
+          Discover YOUR Feline
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="https://atlantahumane.org/adopt/cats/">
+            Atlanta Humane Society
+          </a>
+          <a class="navbar-item" href="https://furkids.org/cat-adoptions">
+            Fur Kids
+          </a>
+          <a class="navbar-item" href="https://www.pawsatlanta.org/adopt/cats">
+            Paws Atlanta
+          </a>
+          <a class="navbar-item" href="https://www.petfinder.com/search/cats-for-adoption/us/ga/atlanta/">
+            PetFinder
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span>
+                Tweet
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 html {
   background-color: rgb(101, 193, 140);
 }
@@ -6,19 +79,16 @@ html {
 body {
   /* cursor: url('Assets/PlaceholderCursor.png'),auto; */
 
-  /* margin: 0;
-  height: 100vh; */
+  margin: 0;
+  height: 100vh;
 /* Adds a custom cursor to the website. */
-  /* cursor: URL('../images/https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
+  cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
   .cursor {
     position: absolute;
     transition-duration: 200ms;
-    transition-timing-function: ease-out; */
+    transition-timing-function: ease-out;
     padding: 25px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+  }
 }
 
 #gridHead {
