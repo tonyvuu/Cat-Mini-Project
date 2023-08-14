@@ -7,7 +7,6 @@ body {
   /* cursor: url('Assets/PlaceholderCursor.png'),auto; */
 
   /* margin: 0;
-  height: 100vh; */
 /* Adds a custom cursor to the website. */
   /* cursor: URL('../images/https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
   .cursor {
@@ -19,12 +18,12 @@ body {
     align-content: center;
     justify-content: center;
     justify-items: center;
-}
-
+    
+  }
+  
+/* This section is for the HEADER */
 #gridHead {
-  display: grid;
-  grid-template-rows: 250px;
-  grid-template-columns: 50% 50%;
+  display: flex;
   align-items: center;
   justify-items: center;
   padding: 10px;  
@@ -32,60 +31,25 @@ body {
 
 .headerImage {
   display: flex;
-  grid-column: 1/4;
-  grid-row: 1/1;
   /* border: solid rgb(127, 127, 127) 5px; */
-  height: 200px;
-  width: 1250px;
+  height: 10%;
+  width: 100%;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
 
-.catBreedImg {
+.NavBar{
   display: flex;
-  justify-content: center;
 }
 
-.catBreedInfo {
-  display: flex;
-  justify-content: center;
-}
-
-.catPawImage {
-  margin-right: 50px;
-}
-
-.gridFooter {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  align-self: center; 
-  padding: 10px;   
-  background-color: rgb(193, 244, 197);
-  border-radius: 5px;
-}
-
-.factBox {
-  /* background-color: aqua; */
-  height: 250px;
-  width: 950px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  padding: 25px;
-  border-radius: 5px;
-
-}
-
+/* This section is for the BODY */
 #gridBody {
   display: grid;
   grid-template-rows:250px, 850px; /* Changed to 1fr for better alignment */
   grid-template-columns: 50% 50%;
   padding: 50px;
-  background-color: rgb(193, 244, 197);
+  background-color: rgb(194, 245, 198);
   border-radius: 5px;
   justify-content: center;
   align-items: center;
@@ -93,6 +57,28 @@ body {
   margin-top: 25px;
   margin-bottom: 5px;
 }
+
+#breedListBoxTop{
+  display: flex;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: white;
+  border-radius: 5px;
+  grid-row: 1; /* Changed to 1 (implicit 1/2) */
+  grid-column: 1; /* Changed to 1 (implicit 1/2) */
+  height: 100px;
+  width: 600px;
+  padding: 10px;
+}
+
+.listTitle{
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+}
+
 
 #breedListBox {
   display: flex;
@@ -119,8 +105,70 @@ body {
   grid-column: 2; /* Changed to 2 (implicit 1/2) */
   height: 600px;
   width: 600px;
-  
 }
+
+.breedImg{
+  height: 200px;
+  width: 320px;
+}
+.catBreedInfo {
+  display: flex;
+  justify-content: center;
+}
+
+/* This section is for the FOOTER */
+.gridFooter {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  align-self: center; 
+  padding: 10px;   
+  background-color: rgb(193, 244, 197);
+  border-radius: 5px;
+}
+
+/* #factBox {
+  background-color: aqua;
+  height: 250px;
+  width: 950px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  padding: 25px;
+  border-radius: 5px; 
+} */
+
+.catPawImage {
+  margin-right: 50px;
+  float: left;
+  width: 80px;
+  height: auto;
+}
+
+#factBox {
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Center the box horizontally */
+  transform: translateX(-50%); /* Center the box horizontally */
+  padding: 10px;
+  background-color: rgb(194, 245, 198); /* Add a semi-transparent background */
+  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Add a separator line */
+  width: 100%;
+  text-align: center;
+  display: grid;  
+  grid-template-columns: 10%, 80%;
+}
+
+
+.catPawImage {
+  margin-right: 50px;
+  width: 6%;
+  height: auto;
+  grid-column: 1;
+}
+
 
 button{
   width: 300px;
@@ -132,6 +180,7 @@ button{
   border-radius: 5px;
   font-size: 20px;
   padding: 10px;
+
 }
 
 #breedListBoxTop{
@@ -160,9 +209,6 @@ button{
   width: 320px;
 }
 
-.NavBar{
-  display: flex;
-}
 
 footer {
   height: 50px;
@@ -178,4 +224,5 @@ footer {
 footer > div {
   display: flex;
   justify-content: space-between; 
+
 }
