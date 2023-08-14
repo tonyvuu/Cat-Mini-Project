@@ -3,11 +3,13 @@
     justify-content: center; 
     align-items: center;  
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #BEADFA;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    background-color: #FFF3DA;
 }
 
 
@@ -17,14 +19,6 @@ body {
     margin: 25px;
 }
 
-.Header2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
 
 .button{
     display: flex;
@@ -40,10 +34,27 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  footer > div {
+}
+
+footer > div {
     display: flex;
     justify-content: space-between; 
-  }
+}
 
+.Header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DFCCFB;
+
+}
+
+.Header3 {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: pink;
+}
