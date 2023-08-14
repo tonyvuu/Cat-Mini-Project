@@ -9,7 +9,7 @@ body {
   margin: 0;
   height: 100vh;
 /* Adds a custom cursor to the website. */
-  cursor: URL('../images/https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
+  cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
   .cursor {
     position: absolute;
     transition-duration: 200ms;
