@@ -10,8 +10,11 @@ const GenCatFacts = () => {
         .then(result => result.fact)
         .then(fact => document.getElementById("fact").innerText = fact
         );
+// Added a hoverable sound effect to our blue eyed mascot to beg for adoption" - US 
 }
-
+const hoverMouseOver = () => {
+    soundEffect1.play ();
+}
 function GenCatBreed() {
     fetch("https://api.thecatapi.com/v1/breeds")
         .then(response => {

@@ -45,16 +45,20 @@ body {
 }
 .navbar {
   background-blend-mode: color;
+  padding:0;
 }
 
 .navbar-item img {
-  max-height: 30px;
+  max-height: 200px;
   border-radius: 10%;
 }
+.NavBar{
+  display: flex;
+}
 
-.navbarImg{
-  height: 200px;
-  width: auto;
+.navbar is-transparent{
+  padding:0px;
+  margin:0px;
 }
 
 /* This section is for the BODY */
