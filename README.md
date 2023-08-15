@@ -31,7 +31,7 @@ By utilizing these APIs, Meow Match project offers real-time updates to users. A
 SCREENSHOTS OF THE PROJECT ??? (Will take SS once we are done or close to done)
 
 
-LIST OF TEAM MEMBERS
+LIST OF TEAM MEMBERS:
 Tony Vu
 Anthony Badila
 Ursula Still
