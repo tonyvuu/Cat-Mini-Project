@@ -50,6 +50,7 @@ function GenCatBreed() {
 
                     //Creates a list for the below list items to be stored.
                     let breedInfo = document.createElement('ul');
+                    breedInfo.classList.add("catInfoText")
                     infoBox.appendChild(imageTag);
                     infoBox.appendChild(breedInfo);
 
