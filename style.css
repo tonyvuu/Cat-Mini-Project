@@ -45,14 +45,23 @@ body {
 }
 .navbar {
   background-blend-mode: color;
+  padding:0;
 }
 
 .navbar-item img {
-  max-height: 200px;
+  max-height: 75px;
+  width: auto;
   border-radius: 10%;
+  padding:0;
+  margin:0;
 }
 .NavBar{
   display: flex;
+}
+
+.navbar is-transparent{
+  padding:0px;
+  margin:0px;
 }
 
 /* This section is for the BODY */
