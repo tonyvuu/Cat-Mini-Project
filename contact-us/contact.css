@@ -2,3 +2,19 @@
     justify-content: center;
     display: flex;
 }
+
+footer {
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer > div {
+    display: flex;
+    justify-content: space-between; 
+  }

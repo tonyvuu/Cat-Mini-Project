@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- MAIN NOTES -PLEASE DO NOT CHANGE CLASSES TO ID'S WITHOUT SAYING ANYTHING!!-->
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +14,20 @@
     <script defer src="jss.js"></script>
     <!-- Here I, US, am adding the bootstrap link for js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
   </head>
+  
   <body>
+  
+
+  
     <div class="cursor"></div>
     
   
   <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
   <div id="gridHead">
     <div class="headerImage">
-      <a href="index.html"><img src="Assets/MeowMatchUncropped.png" style="height: 220px;"></a>
+      <a href="index.html"><img src="Assets/MeowMatchUncropped.png" style="height: 130px;"></a>
     </div>
   </div>
 
@@ -74,17 +80,28 @@
 
 
    <div class="gridFooter">
-   <div class="factBox">
-    <!-- Cat facts button -->
-    <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage" onclick="GenCatFacts()">
 
-    <!-- Here I, US, am adding an addEventListener that adds a purr sound for the cat facts -->
-    <p id="fact" style="color: rgb(255, 37, 99); font-size: x-large; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;"></p>
-     
+   <div id="factBox">
+    <div class="factBox">
+      <!-- Cat facts button -->
+      <img src="Assets/PlaceholderCursor.png" class="catPawImage" onclick="GenCatFacts()">
+
+      <!-- Here I, US, am adding an addEventListener that adds a purr sound for the cat facts -->
+      <p id="fact" style="color: rgb(255, 37, 99); font-size: x-large; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;"></p>
+    </div>
     <!-- <button onclick="GenCatFacts()">Generate Cat Fact</button> -->
     <div class="catFacts"></div>
    </div>
 </div>
+<footer>
+<div>
+  <p>All Contents ©2023 Meow Match &nbsp&nbsp&nbsp</p> 
+  <p>Privacy Policy &nbsp&nbsp&nbsp</p> 
+  <p>Help &nbsp&nbsp&nbsp</p>
+</div>
+
+
+</footer> 
 
 <audio id="soundEffect">
   <source src="Scratch meow sound effect.mp3" type="audio/mp4">
