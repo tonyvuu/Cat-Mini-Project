@@ -48,11 +48,13 @@ body {
 }
 
 .navbar-item img {
-  max-height: 200px;
+  max-height: 30px;
   border-radius: 10%;
 }
-.NavBar{
-  display: flex;
+
+.navbarImg{
+  height: 200px;
+  width: auto;
 }
 
 /* This section is for the BODY */
