@@ -1,15 +1,39 @@
+@font-face {
+    font-family: headerFont;
+    src: url(Comic\ Book\ copy.otf);
+  }
+
 .Header{
     display: flex;
     justify-content: center; 
     align-items: center;  
+    font-family: headerFont;
+    background-color: #1369A0;
+}
+
+.pText {
+    display: flex;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #BEADFA;
+    color: #3A4853;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+.pContainer {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height as needed */
+  border: 2px solid #000; /* Border properties */
+  box-sizing: border-box; /* Include border in width/height calculations */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: #FFF3DA;
+    background-color: #97A2AE;
 }
 
 
@@ -23,17 +47,14 @@ body {
 .button{
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
 }
 
 footer {
-    height: 50px;
     background-color: #333;
     color: white;
-    text-align: center;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 footer > div {
@@ -47,7 +68,7 @@ footer > div {
     align-items: center;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #DFCCFB;
+    color: #6FBACC;
 
 }
 
@@ -56,5 +77,11 @@ footer > div {
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
-    color: pink;
+    color: #B65D68;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
