@@ -18,3 +18,31 @@ footer {
     display: flex;
     justify-content: space-between; 
   }
+
+
+body{
+grid-template-columns: 20%, 20%;  
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-text-container img {
+  width: 300px;
+  height: 300px;
+}
+
+.text-box {
+  flex: 1;
+  margin-left: 20px;
+  text-align: right; /* Align text to the right */
+  border: 1px solid #ddd; /* Add border */
+  padding: 10px; /* Add padding */
+}
+
+.practice{
+  
+}
