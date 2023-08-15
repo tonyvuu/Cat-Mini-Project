@@ -49,11 +49,8 @@ body {
 }
 
 .navbar-item img {
-  max-height: 75px;
-  width: auto;
+  max-height: 200px;
   border-radius: 10%;
-  padding:0;
-  margin:0;
 }
 .NavBar{
   display: flex;
