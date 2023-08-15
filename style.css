@@ -5,7 +5,15 @@ body {
   /* Adds a custom cursor to the website. */
   margin: 0;
   height: 100vh;
-  padding: 10px;
+  cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
+  
+}
+
+.cursor {
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  padding: 25px;
 }
   
 /* This section is for the HEADER */

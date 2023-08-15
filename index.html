@@ -9,8 +9,9 @@
     
     <!-- Here I, US, am adding the bootstrap link for css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Links the stylesheet from Jquery UI -->
+    <link rel="stylesheet" href=""><link rel="stylesheet" href="jquery-ui.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
     <script defer src="jss.js"></script>
     <!-- Here I, US, am adding the bootstrap link for js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -18,9 +19,9 @@
   </head>
   
   <body>
-  
-
-  
+    
+    
+    
     <div class="cursor"></div>
     
   
@@ -46,63 +47,98 @@
         <!-- <h2>List of Cat Breeds</h2> -->
        </div>
 
-        <div id="breedInfoBox">
-        <div class="catBreedImg">
-          <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
-        
-          <!-- Here I, US, am trying to add a car that will display a cat image pulled from another html. -->
-           <!-- </div> -->
-        <!-- <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div> -->
-        </div> 
-        <!-- <div class="catBreedInfo">
-          Information about the cat breeds go here<br>
-          - Breed<br>
-          - Lifespan<br>
-          - Weight:       Length:<br>
-          - Coat<br>
-          - Friendliness<br>
-          - Health Issues<br>
-          - Social Needs<br>
-          - Grooming Needs<br>
-          - Shed Level<br>
-          - Vocalization Tendency<br>  -->
-        </div>
+    
+    <!-- This is the header grid. it holds the header image, the navagation bar, and whatever else goes at the top of the screen. -->
+    <div id="gridHead">
+      <div class="headerImage">
+        <a href="index.html"><img src="Assets/MeowMatchUncropped.png" style="height: 130px;"></a>
       </div>
-  </div>
-
-   <div id="factBox">
-    <div class="factBox">
-      <!-- Cat facts button -->
-      <img src="CatFactButton.png" class="catPawImage" onclick="GenCatFacts()">
-
-      <!-- Here I, US, am adding an addEventListener that adds a purr sound for the cat facts -->
-      <p id="fact" style="color: rgb(82, 95, 225); font-size: x-large; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;"></p>
     </div>
-    <!-- <button onclick="GenCatFacts()">Generate Cat Fact</button> -->
-    <div class="catFacts"></div>
-   </div>
-<footer>
-<div>
-  <p>All Contents ©2023 Meow Match &nbsp&nbsp&nbsp</p> 
-  <p>Privacy Policy &nbsp&nbsp&nbsp</p> 
-  <p>Help &nbsp&nbsp&nbsp</p>
-</div>
-
-
-</footer> 
-
-<audio id="soundEffect">
-  <source src="Scratch meow sound effect.mp3" type="audio/mp4">
-</audio>
- 
-</body>
-
-</html>
+    
+    <!-- This is the grid body. It contains everything else on the page. -->
+    
+    <div id="gridBody">
+      
+      <!-- Here I, US, am adding a scrollbar as we are looking to activate all 67 types of cats on a scrollbar so that site real estate is maximized. -->
+      
+      <!-- const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+        firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+          // do something...
+        }) -->
+        <div id="breedListBoxTop"><h2 class="listTitle">BROWSE BREEDS</h2></div>
+        <div id="breedListBox">
+          <!-- <h2>List of Cat Breeds</h2> -->
+        </div>
+        
+        <div id="breedInfoBox">
+          <div class="catBreedImg">
+            <img src="Assets/PlaceholderCursor.png" style="height: 150px;" class="catPawImage">
+            
+            <!-- Here I, US, am trying to add a car that will display a cat image pulled from another html. -->
+            <!-- </div> -->
+            <!-- <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div> -->
+            </div> 
+            <!-- <div class="catBreedInfo">
+              Information about the cat breeds go here<br>
+              - Breed<br>
+              - Lifespan<br>
+              - Weight:       Length:<br>
+              - Coat<br>
+              - Friendliness<br>
+              - Health Issues<br>
+              - Social Needs<br>
+              - Grooming Needs<br>
+              - Shed Level<br>
+              - Vocalization Tendency<br>  -->
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="gridFooter">
+          
+          <div id="factBox">
+            <div class="factBox">
+              <!-- Cat facts button -->
+              <img src="Assets/PlaceholderCursor.png" class="catPawImage" onclick="GenCatFacts()">
+              
+              <!-- Here I, US, am adding an addEventListener that adds a purr sound for the cat facts -->
+              <p id="fact" style="color: rgb(255, 37, 99); font-size: x-large; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;"></p>
+            </div>
+            <!-- <button onclick="GenCatFacts()">Generate Cat Fact</button> -->
+            <div class="catFacts"></div>
+          </div>
+        </div>
+        <footer>
+          <div>
+            <p>All Contents ©2023 Meow Match &nbsp&nbsp&nbsp</p> 
+            <p>Privacy Policy &nbsp&nbsp&nbsp</p> 
+            <p>Help &nbsp&nbsp&nbsp</p>
+          </div>
+          
+          
+        </footer> 
+        
+        <audio id="soundEffect">
+          <source src="Scratch meow sound effect.mp3" type="audio/mp4">
+        </audio>
+        <!-- Links the JavaScript from JQuery UI -->
+        <script src="external/jquery/jquery.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <!-- Lines 114-118 are to use the Jquery UI tooltip widget -->
+        <script>
+          $(document).ready(function() {
+            $( "#tooltip" ).tooltip();
+          });
+        </script>
+      </body>
+      
+      </html>
