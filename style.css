@@ -125,6 +125,8 @@ body {
 .placeHolderCatPic{
   height: 500px;
   width: 500px;
+  border-radius: 10px;
+  border: solid #3A4853 5px;
 }
 .catBreedInfo {
   display: flex;
