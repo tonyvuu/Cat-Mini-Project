@@ -28,7 +28,11 @@ This API endpoint provides random cat facts. The project also utilizes the Fetch
 By utilizing these APIs, Meow Match project offers real-time updates to users. As new cat breeds are added to the API or new cat facts become available, the platform automatically reflects these changes. This ensures that users are provided with up-to-date and accurate information, enhancing the overall user experience and keeping visitors engaged.
 
 
-SCREENSHOTS OF THE PROJECT ??? (Will take SS once we are done or close to done)
+SCREENSHOTS OF THE PROJECT ??? 
+
+![Alt Text](/Assets/Screenshots/image%20(1).png)
+![Alt Text](/Assets/Screenshots/image%20(3).png)
+![Alt Text](/Assets/Screenshots/image%20(2).png)
 
 
 LIST OF TEAM MEMBERS:
