@@ -29,14 +29,11 @@ const GenCatFacts = () => {
                 factElement.innerText = '';
             }, timeoutDuration);
     });
-
-// Added a hoverable sound effect to our blue eyed mascot to beg for adoption" - US 
-function navbarSnd(){
-    const hoverMouseOver = () => {
-        soundEffect1.play ();
-    }
 }
-
+// Added a hoverable sound effect to our blue eyed mascot to beg for adoption" - US 
+const hoverMouseOver = () => {
+    soundEffect1.play ();
+}
 function GenCatBreed() {
     fetch("https://api.thecatapi.com/v1/breeds")
         .then(response => {
