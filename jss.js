@@ -29,6 +29,12 @@ const GenCatFacts = () => {
                 factElement.innerText = '';
             }, timeoutDuration);
     });
+
+// Added a hoverable sound effect to our blue eyed mascot to beg for adoption" - US 
+function navbarSnd(){
+    const hoverMouseOver = () => {
+        soundEffect1.play ();
+    }
 }
 
 function GenCatBreed() {
