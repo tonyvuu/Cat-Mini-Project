@@ -48,9 +48,12 @@ body {
   background-blend-mode: color;
   padding:0;
 }
-
+.navbar-start{
+  background-color: #B65D68;
+  width: 100%
+}
 .navbar-item img {
-  max-height: 200px;
+  max-height: 100px;
   border-radius: 10%;
 }
 .NavBar{
