@@ -14,9 +14,9 @@ body {
 
   /* Adds a custom cursor to the website. */
   margin: 0;
-  height: 100vh;
+  height: 100%;
   cursor: URL('https://sweezy-cursors.com/wp-content/uploads/cursor/woman-yelling-at-a-cat-meme/woman-yelling-at-a-cat-meme-pointer-64.png'), auto;
-  
+
 }
 
 .cursor {
@@ -25,13 +25,13 @@ body {
   transition-timing-function: ease-out;
   padding: 25px;
 }
-  
+
 /* This section is for the HEADER */
 #gridHead {
   display: flex;
   align-items: center;
   justify-items: center;
-  padding: 10px;  
+  padding: 10px;
 }
 
 .headerImage {
@@ -43,6 +43,7 @@ body {
   align-content: center;
   justify-content: center;
 }
+
 .navbar {
   background-blend-mode: color;
   padding:0;
@@ -59,16 +60,17 @@ body {
   display: flex;
 }
 
-.navbar is-transparent{
-  padding:0px;
-  margin:0px;
+
+.navbarImg {
+  height: 200px;
+  width: auto;
 }
 
 /* This section is for the BODY */
 #gridBody {
-  display: grid;
-  grid-template-rows:250px, 850px; /* Changed to 1fr for better alignment */
-  grid-template-columns: 50% 50%;
+  display: flex;
+
+  /* Changed to 1fr for better alignment */
   padding: 50px;
   background-color: #97A2AE;
   border-radius: 5px;
@@ -79,7 +81,7 @@ body {
   margin-bottom: 5px;
 }
 
-#breedListBoxTop{
+#breedListBoxTop {
   display: flex;
   align-content: center;
   align-self: center;
@@ -87,8 +89,10 @@ body {
   justify-items: center;
   background-color: white;
   border-radius: 5px;
-  grid-row: 1; /* Changed to 1 (implicit 1/2) */
-  grid-column: 1; /* Changed to 1 (implicit 1/2) */
+  grid-row: 1;
+  /* Changed to 1 (implicit 1/2) */
+  grid-column: 1;
+  /* Changed to 1 (implicit 1/2) */
   height: 100px;
   width: 600px;
   padding: 10px;
@@ -97,7 +101,7 @@ body {
   font-family: browseBreedsFont;
 }
 
-.listTitle{
+.listTitle {
   justify-self: center;
   justify-content: center;
   align-self: center;
@@ -110,16 +114,22 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 5px;
-  grid-row: 2; /* Changed to 1 (implicit 1/2) */
-  grid-column: 1; /* Changed to 1 (implicit 1/2) */
-  height: 700px;
+  grid-row: 2;
+  /* Changed to 1 (implicit 1/2) */
+  grid-column: 1;
+  /* Changed to 1 (implicit 1/2) */
+  height: 550px;
   width: 600px;
   overflow-y: auto;
   padding: 10px;
   border: solid #3A4853 5px;
   border-radius: 5px;
   align-self: flex-start;
-}
+}  
+
+#space {
+  width: 7.5%;
+}  
 
 #breedInfoBox {
   display: flex;
@@ -128,26 +138,51 @@ body {
   justify-content: center;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  grid-row: 1; /* Changed to 1 (implicit 1/2) */
-  grid-column: 2; /* Changed to 2 (implicit 1/2) */
-  height: 900px;
-  width: 700px;
+  grid-row: 1;
+  /* Changed to 1 (implicit 1/2) */
+  grid-column: 2;
+  /* Changed to 2 (implicit 1/2) */
+  height: 100%;
+  width: 95%;
   padding: 20px;
   border: solid #3A4853 5px;
   border-radius: 5px;
+}  
+
+
+/* Lines 146-163 apply style changes to the car */
+.carInnerImg {
+  height: 300px;
+  border-radius: 50%;
 }
 
+.carousel-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-caption {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  right: 51%;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.64);
+}
+
+
 /* This is the placeholder pic of the silly cat */
-.placeHolderCatPic{
+.placeHolderCatPic {
   height: 500px;
   width: 500px;
   border-radius: 10px;
   border: solid #3A4853 5px;
-}
+}  
+
 .catBreedInfo {
   display: flex;
   justify-content: center;
-}
+}  
 
 /* This section is for the FOOTER */
 .gridFooter {
@@ -155,37 +190,46 @@ body {
   align-items: center;
   justify-items: center;
   align-content: center;
-  align-self: center; 
-  padding: 10px;   
+  align-self: center;
+  padding: 10px;
   background-color: rgb(82, 95, 225);
   border-radius: 5px;
-}
-
+}  
 
 #factBox {
   position: fixed;
   bottom: 0;
-  left: 50%; /* Center the box horizontally */
-  transform: translateX(-50%); /* Center the box horizontally */
+  left: 50%;
+  /*Centers the box horizontally*/
+  transform: translateX(-50%);
+  /*Centers the box horizontally */
   padding: 10px;
-  background-color: #6FBACC; /* Add a semi-transparent background */
-  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Add a separator line */
+  background-color: #6FBACC;
+  /*Adds a semi-transparent background*/
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  /*Adds a separator line*/
   width: 100%;
   text-align: center;
-  display: grid;  
-  grid-template-columns: 10%, 80%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  z-index: 500;
 }
 
 /* This is the cat facts button */
 .catPawImage {
-  margin-right: 50px;
+  /* margin-right: 50px; */
   width: 5%;
   height: auto;
+  grid-row: 1;
   grid-column: 1;
 }
 
+#fact {
+  grid-column: 2;
+}
 
-button{
+button {
   width: 300px;
   height: 150px;
   border: 2px solid #1369A0;
@@ -198,7 +242,7 @@ button{
 
 }
 
-#breedListBoxTop{
+#breedListBoxTop {
   display: flex;
   align-content: center;
   align-self: center;
@@ -206,14 +250,16 @@ button{
   justify-items: center;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  grid-row: 2; /* Changed to 1 (implicit 1/2) */
-  grid-column: 1; /* Changed to 1 (implicit 1/2) */
+  grid-row: 2;
+  /* Changed to 1 (implicit 1/2) */
+  grid-column: 1;
+  /* Changed to 1 (implicit 1/2) */
   height: 100px;
   width: 600px;
   padding: 10px;
 }
 
-.listTitle{
+.listTitle {
   justify-self: center;
   justify-content: center;
   align-self: center;
@@ -223,16 +269,22 @@ button{
 }
 
 /* Image of the cats that gets appended when you select a breed */
-.breedImg{
+.breedImg {
   height: 200px;
-  width: 300px;
+  width: auto;
+  /* margin-bottom: -5%; */
 }
 
-.catInfoText{
+.catInfoText {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 135%;
+  font-size: 110%;
   color: #B65D68;
   padding: 50px;
+  margin: -5%;
+}
+
+#deadSpc {
+  height: 100px;
 }
 
 footer {
@@ -245,4 +297,102 @@ footer {
   justify-content: center;
   align-items: center;
 }
-/* ::-webkit-scrollbar{color: #B65D68;} */
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  #gridHead {
+    grid-row: 1;
+  }
+
+  /* Issues with stylesheet cause the navbar to act up on mobile devices so I have elected to turn it off until a solution is found. */
+  .navbar {
+    display: none;
+    grid-row: 2;
+  }
+
+  .navbar-burger {
+    display: none; /* Hide the default burger icon */
+  }
+
+  .navbar-menu {
+    display: none; /* Hide the main menu */
+  }
+
+  .navbar-dropdown {
+    display: none; /* Hide dropdown menu by default */
+    position: absolute;
+    background-color: #fff; /* Background color for the dropdown */
+    border: 1px solid #ccc;
+    z-index: 1000;
+    min-width: 200px; /* Adjust the dropdown width as needed */
+  }
+
+  .navbar-item.has-dropdown:hover .navbar-dropdown {
+    display: block; /* Show dropdown on hover */
+  }
+
+  .navbar-dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  #gridBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: -3%;
+  }
+
+  #breedListBoxTop {
+    grid-row: 3;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .listTitle {
+    font-size: 36px; /* Adjust the font size as needed */
+  }
+
+  #breedListBox {
+    grid-row: 4;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #breedInfoBox {
+    grid-row: 5;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .carousel-container {
+    grid-row: 6;
+  }
+
+  /* Additional adjustments for mobile layout */
+  .gridCell {
+    display: block;
+    padding: 0;
+  }
+
+  #space {
+    width: 100%;
+    height: 20px; /* Add desired height */
+  }
+
+  #deadSpc{
+    height: 50px;
+  }
+
+  .catPawImage{
+    width: 10%;
+  }
+}
